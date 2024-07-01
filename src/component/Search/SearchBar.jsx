@@ -43,7 +43,7 @@ const SearchBar = ({ setResults }) => {
           <div className="title ">
             <h1>TRAVEL AROUND CAMBODIA</h1>
             <p>
-              Plan your trip and travel around Cambodai with the most affordable
+              Plan your trip and travel around Cambodia with the most affordable
               places
             </p>
           </div>
@@ -57,13 +57,11 @@ const SearchBar = ({ setResults }) => {
           </div>
 
           <div
-            className="p-3 d-flex align-items-center bg-white rounded "
-            style={{ width: "50%", marginLeft: "21%" }}
+            className="p-3 d-flex align-items-center bg-white rounded w-50 mx-auto"
           >
             <i className="bi bi-search fs-5"></i>
             <input
-              style={{ width: "500px", height: "40px" }}
-              className="rounded p-2 border-1 mx-4"
+              className="rounded p-2 border-1 mx-4 w-100"
               placeholder="Type to search..."
               value={input}
               onChange={(e) => handleChange(e.target.value)}

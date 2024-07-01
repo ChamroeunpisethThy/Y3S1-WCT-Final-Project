@@ -46,7 +46,7 @@ const SignUp = () => {
               required
               onChange={(e) => setUsername(e.target.value)}
             />
-            <label htmlFor="floatingSignInUsername">Username</label>
+            <label htmlFor="floatingSignInUsername">Username <span className="text-danger">&#42;</span></label>
           </div>
           <div className="form-floating mb-3">
             <input
@@ -57,7 +57,7 @@ const SignUp = () => {
               required
               onChange={(e) => setEmail(e.target.value)}
             />
-            <label htmlFor="floatingSignInInput">Email address</label>
+            <label htmlFor="floatingSignInInput">Email address <span className="text-danger">&#42;</span></label>
           </div>
           <div className="form-floating">
             <input
@@ -68,7 +68,7 @@ const SignUp = () => {
               required
               onChange={(e) => setPassword(e.target.value)}
             />
-            <label htmlFor="floatingPassword">Password</label>
+            <label htmlFor="floatingPassword">Password <span className="text-danger">&#42;</span></label>
           </div>
           <div className="d-flex justify-content-end mt-3">
             <button className="btn btn-secondary mx-1">Sign up</button>

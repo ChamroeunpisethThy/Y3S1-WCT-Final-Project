@@ -28,7 +28,7 @@ const BookmarkList = () => {
       {results && results.length > 0 && <SearchResultsList results={results} />}
       <h2 className="ms-5 my-3">{language === 'English' ? 'Bookmarks' : 'កំណត់ចំណាំ'}</h2>
       <p className={`lead ms-5 ${bookmarkedItems.length == 0 ? "" : "d-none"}`}>{language === 'English' ? 'Bookmarks will be displayed here.' : 'កំណត់ចំណាំនឹងត្រូវបានបង្ហាញនៅទីនេះ។'}</p>
-      <div className='row'>
+      <div className='row mx-auto'>
         {bookmarkedItems.map((items) => (
           <Content {...items[language]} key={items[language].id}/>
         ))}

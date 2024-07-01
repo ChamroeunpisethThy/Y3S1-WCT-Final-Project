@@ -30,13 +30,13 @@ const HightlightList = () => {
     <> 
       {
         (isSmallScreen || isMediumScreen) ? 
-          <div className="row d-md-none d-xl-inline-flex d-xxxl-none">
+          <div className="row d-md-none d-xl-inline-flex d-xxxl-none mx-auto">
             {Array.from({ length: hightlightDataSmall.length }, (_, index) => (
               <Content {...hightlightDataSmall[index]} key={hightlightDataSmall[index].id} provinceData={provinceData} />
             ))}
           </div>
         :
-          <div className="row d-none d-md-inline-flex d-xl-none d-xxxl-inline-flex d-xxxl-inline-flex">
+          <div className="row d-none d-md-inline-flex d-xl-none d-xxxl-inline-flex d-xxxl-inline-flex mx-auto">
             {Array.from({ length: hightlightDataBig.length }, (_, index) => (
               <Content {...hightlightDataBig[index]} key={hightlightDataBig[index].id} provinceData={provinceData} />
             ))}

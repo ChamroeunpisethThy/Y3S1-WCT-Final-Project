@@ -11,7 +11,7 @@ const About = () => {
 			<h1 className="fw-bold">Komsanhub</h1>
 		</div>
 
-		<div className="row my-5 ">
+		<div className="row my-5 mx-auto">
 			<div className="d-none d-md-inline col-md-6 text-center">
 				<img className="rounded-3 object-fit-cover h-100 w-75" src={Background1} alt="angkor wat" />	
 			</div>

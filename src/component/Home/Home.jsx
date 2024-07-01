@@ -15,8 +15,9 @@ const Home = () => {
     <>
       <SearchBar setResults={setResults}/>
       {results && results.length > 0 && <SearchResultsList results={results} />}
-      <div className="d-flex flex-column align-content-center" style={{maxWidth: "98%"}}>
+      <div className="d-flex flex-column align-content-center">
         <div  className="d-flex flex-column align-content-center">
+          <h1 className="text-center my-3 fw-bold">{language === 'English' ? 'Popular' : "កន្លែងល្បី"}</h1>
           <PopularList />
         </div>
         <div className="d-flex flex-column align-content-center">

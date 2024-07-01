@@ -40,7 +40,7 @@ const SignIn = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <label htmlFor="floatingSignInInput">Email address</label>
+            <label htmlFor="floatingSignInInput">Email address <span className="text-danger">&#42;</span></label>
           </div>
           <div className="form-floating">
             <input
@@ -51,7 +51,7 @@ const SignIn = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <label htmlFor="floatingPassword">Password</label>
+            <label htmlFor="floatingPassword">Password <span className="text-danger">&#42;</span></label>
           </div>
           <div className="d-flex justify-content-end">
             <button className="btn btn-secondary mt-3 mx-1">Sign In</button>

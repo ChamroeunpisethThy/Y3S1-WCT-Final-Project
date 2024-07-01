@@ -29,13 +29,13 @@ const LatestList = () => {
     <>
       {
         (isSmallScreen || isMediumScreen) ? 
-          <div className="row d-lg-none d-xl-inline-flex d-xxxl-none">
+          <div className="row d-lg-none d-xl-inline-flex d-xxxl-none mx-auto">
             {Array.from({ length: lastestThree.length }, (_, index) => (
               <Content {...lastestThree[index]} key={lastestThree[index].id} provinceData={provinceData} />
             ))}
           </div>
         :
-          <div className="row d-none d-lg-inline-flex d-xl-none d-xxxl-inline-flex d-xxxl-inline-flex">
+          <div className="row d-none d-lg-inline-flex d-xl-none d-xxxl-inline-flex d-xxxl-inline-flex mx-auto">
             {Array.from({ length: lastestFour.length }, (_, index) => (
               <Content {...lastestFour[index]} key={lastestFour[index].id} provinceData={provinceData} />
             ))}
