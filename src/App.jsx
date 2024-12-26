@@ -11,6 +11,7 @@ import Page404 from './component/General/Page404.jsx';
 import QuickTripPlanner from './component/QuickTrip/QuickTripPlanner.jsx';
 import SignIn from './component/Auth/SignIn.jsx';
 import SignUp from './component/Auth/SignUp.jsx';
+import url from './assets/data/url.js';
 
 export const LanguageContext = createContext("English");
 export const ProvinceData = createContext({});
@@ -21,7 +22,7 @@ function App() {
     setLanguage((prevLanguage) => (prevLanguage === 'English' ? 'Khmer' : 'English'));
   };
   useEffect(() => {
-    fetch("https://province-api-sxzb.onrender.com/provincesData")
+    fetch(url)
     .then((response) => response.json())
     .then((json) => {
       setProvinceData(json)

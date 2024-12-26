@@ -4,12 +4,14 @@ import SearchBar from "../Search/SearchBar.jsx";
 import SearchResultsList from "../Search/SearchResultList.jsx";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import url from '../../assets/data/url.js';
+
 const MainContent = () => {
   const [results, setResults] = useState([]);
   const province = useSelector((state) => state.bookmarks.province);
   const [provinceData, setProvinceData] = useState([]);
   useEffect(() => {
-    fetch("https://province-api-sxzb.onrender.com/provincesData")
+    fetch(url)
     .then((response) => response.json())
     .then((json) => {
       const filteredProvinces = json.filter((data) => {

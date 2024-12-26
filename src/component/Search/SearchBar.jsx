@@ -2,13 +2,14 @@ import "../../assets/styles/search.css";
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import url from '../../assets/data/url.js';
 
 const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
   const navigate = useNavigate();
 
   const fetchData = (value) => {
-    fetch("https://province-api-sxzb.onrender.com/provincesData")
+    fetch(url)
       .then((response) => response.json())
       .then((json) => {
         const results = json.filter((data) => {
